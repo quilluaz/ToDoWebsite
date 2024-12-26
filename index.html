@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header></header>
+    <!-- Main Content -->
+    <main>
+      <div class="main-container">
+        <div class="task-components">
+          <!-- Header -->
+          <h1 class="todo-header">To Do</h1>
+
+          <!-- Button -->
+          <div class="button-container" id="addBtn">
+            <div class="add-button">
+              <i class="add-icon material-icons">add</i>
+              <div class="button-label">
+                <div>Add Task</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Active Tasks Section -->
+          <div id="activeTasks" class="tasks-section">
+            <div class="tasks-container">
+              <!-- Example task item structure -->
+              <div class="task-item">
+                <div class="task-content">
+                  <div class="task-checkbox">
+                    <input type="checkbox" id="task-1" />
+                    <label for="task-1">
+                      <i class="material-icons">done</i>
+                    </label>
+                  </div>
+                  <span class="task-text">Task description here</span>
+                </div>
+                <div class="task-actions">
+                  <button class="edit-task">
+                    <i class="material-icons">edit</i>
+                  </button>
+                  <button class="delete-task">
+                    <i class="material-icons">delete</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <hr class="main-divider" />
+
+          <!-- Completed Tasks Section -->
+          <div id="completedTasks" class="tasks-section">
+            <h2 class="section-header">Completed Tasks</h2>
+            <div class="tasks-container">
+              <!-- Completed tasks will be moved here -->
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle">Add Task</h2>
+              </div>
+
+              <!-- Divider -->
+              <hr />
+
+              <!-- Modal Body -->
+              <div class="modal-body">
+                <input
+                  type="text"
+                  class="modal-input"
+                  id="task-input"
+                  placeholder="Enter task..." />
+              </div>
+
+              <!-- Divider -->
+              <hr />
+
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <div class="modal-button modal-button--primary">
+                  <p class="modal-button__text">Save</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer></footer>
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
